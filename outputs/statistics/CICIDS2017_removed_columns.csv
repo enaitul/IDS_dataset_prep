@@ -1,0 +1,19 @@
+column,reason,stage,dataset
+Flow ID,"Flow identifier built from endpoints + ports; unique per flow, no behavioural content",identifier,CICIDS2017
+Source IP,Host address; memorises the simulation topology (attacker IP) rather than behaviour,identifier,CICIDS2017
+Destination IP,Host address; memorises the simulation topology (victim IP) rather than behaviour,identifier,CICIDS2017
+Source Port,"Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling",identifier,CICIDS2017
+Timestamp,Capture time; not a traffic feature. Preserved as metadata (__timestamp) for leakage audits only,identifier,CICIDS2017
+Bwd PSH Flags,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Bwd URG Flags,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Fwd Avg Bytes/Bulk,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Fwd Avg Packets/Bulk,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Fwd Avg Bulk Rate,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Bwd Avg Bytes/Bulk,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Bwd Avg Packets/Bulk,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+Bwd Avg Bulk Rate,constant (<=1 distinct non-null value) over the whole dataset,constant,CICIDS2017
+SYN Flag Count,values identical to column 'Fwd PSH Flags',duplicate_column,CICIDS2017
+CWE Flag Count,values identical to column 'Fwd URG Flags',duplicate_column,CICIDS2017
+Fwd Header Length.1,values identical to column 'Fwd Header Length',duplicate_column,CICIDS2017
+Subflow Fwd Packets,values identical to column 'Total Fwd Packets',duplicate_column,CICIDS2017
+Subflow Bwd Packets,values identical to column 'Total Backward Packets',duplicate_column,CICIDS2017

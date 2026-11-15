@@ -1,0 +1,52 @@
+feature,rfe_rank,selected
+Flow IAT Mean,1,True
+Fwd Packet Length Max,2,True
+Destination Port,3,True
+Subflow Bwd Bytes,4,True
+Init_Win_bytes_backward,5,True
+Average Packet Size,6,True
+Bwd Header Length,7,True
+Flow IAT Std,8,True
+Bwd Packet Length Max,9,True
+Bwd Packets/s,10,True
+Packet Length Mean,11,True
+min_seg_size_forward,12,True
+Flow Packets/s,13,True
+Avg Bwd Segment Size,14,True
+Init_Win_bytes_forward,15,True
+Fwd IAT Mean,16,True
+Total Length of Fwd Packets,17,True
+Flow Duration,18,True
+Fwd Header Length,19,True
+Bwd Packet Length Mean,20,True
+Max Packet Length,21,True
+Packet Length Std,22,True
+Fwd IAT Std,23,True
+Subflow Fwd Bytes,24,True
+Fwd IAT Max,25,True
+Fwd Packets/s,26,False
+Total Length of Bwd Packets,27,False
+Total Backward Packets,28,False
+Fwd IAT Total,29,False
+Flow IAT Max,30,False
+act_data_pkt_fwd,31,False
+Avg Fwd Segment Size,32,False
+Fwd Packet Length Mean,33,False
+Bwd Packet Length Min,34,False
+Bwd Packet Length Std,35,False
+Flow Bytes/s,36,False
+Total Fwd Packets,37,False
+Fwd Packet Length Std,38,False
+Active Min,39,False
+Bwd IAT Total,40,False
+Packet Length Variance,41,False
+Fwd IAT Min,42,False
+Bwd IAT Mean,43,False
+Bwd IAT Max,44,False
+Active Mean,45,False
+Idle Min,46,False
+Bwd IAT Min,47,False
+Bwd IAT Std,48,False
+Idle Max,49,False
+Active Max,50,False
+Idle Mean,51,False

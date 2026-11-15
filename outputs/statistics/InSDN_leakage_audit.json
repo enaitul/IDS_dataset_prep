@@ -1,0 +1,27 @@
+{
+  "near_duplicate_rounding_decimals": 3,
+  "near_duplicate_rows_validation_in_train": 8,
+  "exact_duplicate_rows_validation_in_train": 0,
+  "near_duplicate_pct_of_validation_in_train": 0.024388013291467243,
+  "near_duplicate_rows_test_in_train": 14,
+  "exact_duplicate_rows_test_in_train": 0,
+  "near_duplicate_pct_of_test_in_train": 0.04267902326006768,
+  "near_duplicate_rows_test_in_validation": 5,
+  "exact_duplicate_rows_test_in_validation": 0,
+  "near_duplicate_pct_of_test_in_validation": 0.015242508307167028,
+  "timestamp_ranges": {
+    "train": [
+      "2019-12-25 17:16:48",
+      "2020-02-07 19:53:00"
+    ],
+    "validation": [
+      "2019-12-25 17:16:49",
+      "2020-02-07 19:52:00"
+    ],
+    "test": [
+      "2019-12-25 17:16:48",
+      "2020-02-07 19:53:00"
+    ]
+  },
+  "temporal_note": "Splits are interleaved in time (random split); ranges overlap by construction."
+}

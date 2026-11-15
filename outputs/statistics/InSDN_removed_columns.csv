@@ -1,0 +1,23 @@
+column,reason,stage,dataset
+Flow ID,"Flow identifier built from endpoints + ports; unique per flow, no behavioural content",identifier,InSDN
+Src IP,Host address; memorises the simulation topology (attacker IP) rather than behaviour,identifier,InSDN
+Dst IP,Host address; memorises the simulation topology (victim IP) rather than behaviour,identifier,InSDN
+Src Port,"Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling",identifier,InSDN
+Timestamp,Capture time; not a traffic feature. Preserved as metadata (__timestamp) for leakage audits only,identifier,InSDN
+Fwd PSH Flags,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Fwd URG Flags,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+CWE Flag Count,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+ECE Flag Cnt,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Fwd Byts/b Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Fwd Pkts/b Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Fwd Blk Rate Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Bwd Byts/b Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Bwd Pkts/b Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Bwd Blk Rate Avg,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Init Fwd Win Byts,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+Fwd Seg Size Min,constant (<=1 distinct non-null value) over the whole dataset,constant,InSDN
+PSH Flag Cnt,values identical to column 'Bwd PSH Flags',duplicate_column,InSDN
+URG Flag Cnt,values identical to column 'Bwd URG Flags',duplicate_column,InSDN
+Fwd Seg Size Avg,values identical to column 'Fwd Pkt Len Mean',duplicate_column,InSDN
+Subflow Fwd Pkts,values identical to column 'Tot Fwd Pkts',duplicate_column,InSDN
+Subflow Bwd Pkts,values identical to column 'Tot Bwd Pkts',duplicate_column,InSDN

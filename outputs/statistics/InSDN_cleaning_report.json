@@ -1,0 +1,168 @@
+{
+  "dataset": "InSDN",
+  "before": {
+    "rows": 343889,
+    "columns": 84,
+    "class_counts": {
+      "DDoS": 121942,
+      "Probe": 98129,
+      "Normal": 68424,
+      "DoS": 53616,
+      "BFA": 1405,
+      "Web-Attack": 192,
+      "BOTNET": 164,
+      "U2R": 17
+    },
+    "rows_without_label": 0
+  },
+  "after": {
+    "rows": 218685,
+    "columns": 61,
+    "class_counts": {
+      "Probe": 98015,
+      "Normal": 66965,
+      "DoS": 50440,
+      "DDoS": 1520,
+      "BFA": 1381,
+      "Web-Attack": 183,
+      "BOTNET": 164,
+      "U2R": 17
+    }
+  },
+  "rows_removed": {
+    "no_label": 0,
+    "all_features_nan": 0,
+    "exact_duplicates": 125204
+  },
+  "exact_duplicates_removed_by_class": {
+    "DDoS": 120422,
+    "DoS": 3176,
+    "Normal": 1459,
+    "Probe": 114,
+    "BFA": 24,
+    "Web-Attack": 9
+  },
+  "non_numeric_cells_coerced_to_nan": 0,
+  "infinite_cells_set_to_nan": 0,
+  "missing_cells_remaining": 0,
+  "conflicting_feature_duplicate_groups_kept": 0,
+  "columns_removed": [
+    {
+      "column": "Flow ID",
+      "reason": "Flow identifier built from endpoints + ports; unique per flow, no behavioural content",
+      "stage": "identifier"
+    },
+    {
+      "column": "Src IP",
+      "reason": "Host address; memorises the simulation topology (attacker IP) rather than behaviour",
+      "stage": "identifier"
+    },
+    {
+      "column": "Dst IP",
+      "reason": "Host address; memorises the simulation topology (victim IP) rather than behaviour",
+      "stage": "identifier"
+    },
+    {
+      "column": "Src Port",
+      "reason": "Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling",
+      "stage": "identifier"
+    },
+    {
+      "column": "Timestamp",
+      "reason": "Capture time; not a traffic feature. Preserved as metadata (__timestamp) for leakage audits only",
+      "stage": "identifier"
+    },
+    {
+      "column": "Fwd PSH Flags",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd URG Flags",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "CWE Flag Count",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "ECE Flag Cnt",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Byts/b Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Pkts/b Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Blk Rate Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Byts/b Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Pkts/b Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Blk Rate Avg",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Init Fwd Win Byts",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Seg Size Min",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "PSH Flag Cnt",
+      "reason": "values identical to column 'Bwd PSH Flags'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "URG Flag Cnt",
+      "reason": "values identical to column 'Bwd URG Flags'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Fwd Seg Size Avg",
+      "reason": "values identical to column 'Fwd Pkt Len Mean'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Subflow Fwd Pkts",
+      "reason": "values identical to column 'Tot Fwd Pkts'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Subflow Bwd Pkts",
+      "reason": "values identical to column 'Tot Bwd Pkts'",
+      "stage": "duplicate_column"
+    }
+  ],
+  "policy": {
+    "drop_exact_duplicates": true,
+    "drop_all_nan_rows": true,
+    "drop_constant_columns": true,
+    "drop_duplicate_columns": true
+  },
+  "fraction_rows_removed": 0.3640825964191934
+}

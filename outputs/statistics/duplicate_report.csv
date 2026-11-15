@@ -1,0 +1,4 @@
+dataset,n_records,exact_duplicate_rows,duplicate_rows_pct,conflicting_feature_duplicate_groups
+NSL-KDD,148517,3,0.0020199707777560816,62
+CICIDS2017,3119345,288804,9.258482149297368,0
+InSDN,343889,1,0.0002907915053985443,0

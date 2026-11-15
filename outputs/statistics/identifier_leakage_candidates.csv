@@ -1,0 +1,14 @@
+dataset,column,reasons
+NSL-KDD,dst_host_same_src_port_rate,name suggests identifier/time/port
+CICIDS2017,Flow ID,name suggests identifier/time/port
+CICIDS2017,Source IP,name suggests identifier/time/port
+CICIDS2017,Source Port,name suggests identifier/time/port
+CICIDS2017,Destination IP,name suggests identifier/time/port
+CICIDS2017,Destination Port,name suggests identifier/time/port
+CICIDS2017,Timestamp,name suggests identifier/time/port
+InSDN,Flow ID,name suggests identifier/time/port
+InSDN,Src IP,name suggests identifier/time/port
+InSDN,Src Port,name suggests identifier/time/port
+InSDN,Dst IP,name suggests identifier/time/port
+InSDN,Dst Port,name suggests identifier/time/port
+InSDN,Timestamp,name suggests identifier/time/port

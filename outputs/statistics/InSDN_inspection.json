@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "dataset": "InSDN",
+    "files": "metasploitable-2.csv; Normal_data.csv; OVS.csv",
+    "formats": "csv",
+    "n_files": 3,
+    "n_records": 343889,
+    "n_features_original": 83,
+    "label_column": "Label",
+    "n_classes": 8,
+    "rows_without_label": 0,
+    "missing_cells": 0,
+    "rows_with_any_missing": 0,
+    "inf_cells": 0,
+    "columns_with_inf": 0,
+    "exact_duplicate_rows": 1,
+    "duplicate_rows_pct": 0.0002907915053985443,
+    "feature_duplicate_conflicting_groups": 0,
+    "n_constant_features": 12,
+    "majority_class": "DDoS",
+    "minority_class": "U2R",
+    "majority_count": 121942,
+    "minority_count": 17,
+    "imbalance_ratio_max_over_min": 7173.058823529412
+  },
+  "missing_per_column": {},
+  "inf_per_column": {},
+  "coerced_non_numeric": {
+    "Flow ID": 343889,
+    "Src IP": 343889,
+    "Dst IP": 343889,
+    "Timestamp": 343889
+  },
+  "constant_features": [
+    "Fwd PSH Flags",
+    "Fwd URG Flags",
+    "CWE Flag Count",
+    "ECE Flag Cnt",
+    "Fwd Byts/b Avg",
+    "Fwd Pkts/b Avg",
+    "Fwd Blk Rate Avg",
+    "Bwd Byts/b Avg",
+    "Bwd Pkts/b Avg",
+    "Bwd Blk Rate Avg",
+    "Init Fwd Win Byts",
+    "Fwd Seg Size Min"
+  ],
+  "identifier_candidates": [
+    {
+      "column": "Flow ID",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Src IP",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Src Port",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Dst IP",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Dst Port",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Timestamp",
+      "reasons": "name suggests identifier/time/port"
+    }
+  ],
+  "file_infos": [
+    {
+      "file": "metasploitable-2.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\InSDN\\_extracted_InSDN_DatasetCSV\\InSDN_DatasetCSV\\metasploitable-2.csv",
+      "format": "csv",
+      "size_bytes": 52789315,
+      "rows": 136743,
+      "md5": "7a8ca7628b265d5d2495c7ad833dc459",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Normal_data.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\InSDN\\_extracted_InSDN_DatasetCSV\\InSDN_DatasetCSV\\Normal_data.csv",
+      "format": "csv",
+      "size_bytes": 33608939,
+      "rows": 68424,
+      "md5": "90c839f64e9057bc46d51f449e45aeb2",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "OVS.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\InSDN\\_extracted_InSDN_DatasetCSV\\InSDN_DatasetCSV\\OVS.csv",
+      "format": "csv",
+      "size_bytes": 55312637,
+      "rows": 138722,
+      "md5": "7fd49cf4f18637a9a2d8c8e9b2858ecc",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    }
+  ]
+}

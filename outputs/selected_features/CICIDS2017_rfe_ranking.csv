@@ -1,0 +1,67 @@
+feature,rfe_rank,selected
+Flow Duration,1,True
+Packet Length Mean,2,True
+Destination Port,3,True
+Fwd Packet Length Max,4,True
+Init_Win_bytes_backward,5,True
+Flow IAT Mean,6,True
+Total Length of Bwd Packets,7,True
+Subflow Bwd Bytes,8,True
+Bwd Header Length,9,True
+Bwd Packets/s,10,True
+min_seg_size_forward,11,True
+Flow Packets/s,12,True
+Average Packet Size,13,True
+Bwd Packet Length Max,14,True
+Flow IAT Max,15,True
+Subflow Fwd Bytes,16,True
+Fwd Header Length,17,True
+Init_Win_bytes_forward,18,True
+Total Length of Fwd Packets,19,True
+Max Packet Length,20,True
+Fwd IAT Std,21,True
+Fwd IAT Mean,22,True
+Avg Bwd Segment Size,23,True
+Bwd Packet Length Mean,24,True
+Fwd IAT Total,25,True
+Fwd Packet Length Mean,26,True
+Flow IAT Std,27,True
+Total Backward Packets,28,True
+Packet Length Std,29,True
+Total Fwd Packets,30,True
+Fwd IAT Max,31,False
+Flow Bytes/s,32,False
+Fwd Packet Length Std,33,False
+Packet Length Variance,34,False
+Bwd Packet Length Min,35,False
+Avg Fwd Segment Size,36,False
+Fwd Packets/s,37,False
+Bwd Packet Length Std,38,False
+act_data_pkt_fwd,39,False
+Fwd IAT Min,40,False
+Flow IAT Min,41,False
+PSH Flag Count,42,False
+Active Min,43,False
+Bwd IAT Min,44,False
+Bwd IAT Total,45,False
+Idle Mean,46,False
+Min Packet Length,47,False
+Bwd IAT Std,48,False
+Active Mean,49,False
+Idle Min,50,False
+Bwd IAT Mean,51,False
+Idle Max,52,False
+Bwd IAT Max,53,False
+ACK Flag Count,54,False
+Fwd Packet Length Min,55,False
+Active Max,56,False
+Fwd PSH Flags,57,False
+URG Flag Count,58,False
+Down/Up Ratio,59,False
+Protocol,60,False
+FIN Flag Count,61,False
+Idle Std,62,False
+Active Std,63,False
+RST Flag Count,64,False
+Fwd URG Flags,65,False
+ECE Flag Count,66,False

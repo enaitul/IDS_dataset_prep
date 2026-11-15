@@ -1,0 +1,210 @@
+feature,dtype,role_guess,n_unique,n_missing,n_inf,is_constant,dataset
+duration,int64,numeric,3424,0,0,False,NSL-KDD
+protocol_type,str,categorical,3,0,0,False,NSL-KDD
+service,str,categorical,71,0,0,False,NSL-KDD
+flag,str,categorical,11,0,0,False,NSL-KDD
+src_bytes,int64,numeric,3601,0,0,False,NSL-KDD
+dst_bytes,int64,numeric,10401,0,0,False,NSL-KDD
+land,int64,numeric,2,0,0,False,NSL-KDD
+wrong_fragment,int64,numeric,3,0,0,False,NSL-KDD
+urgent,int64,numeric,4,0,0,False,NSL-KDD
+hot,int64,numeric,29,0,0,False,NSL-KDD
+num_failed_logins,int64,numeric,6,0,0,False,NSL-KDD
+logged_in,int64,numeric,2,0,0,False,NSL-KDD
+num_compromised,int64,numeric,96,0,0,False,NSL-KDD
+root_shell,int64,numeric,2,0,0,False,NSL-KDD
+su_attempted,int64,numeric,3,0,0,False,NSL-KDD
+num_root,int64,numeric,91,0,0,False,NSL-KDD
+num_file_creations,int64,numeric,36,0,0,False,NSL-KDD
+num_shells,int64,numeric,4,0,0,False,NSL-KDD
+num_access_files,int64,numeric,10,0,0,False,NSL-KDD
+num_outbound_cmds,int64,numeric,1,0,0,True,NSL-KDD
+is_host_login,int64,numeric,2,0,0,False,NSL-KDD
+is_guest_login,int64,numeric,2,0,0,False,NSL-KDD
+count,int64,numeric,512,0,0,False,NSL-KDD
+srv_count,int64,numeric,512,0,0,False,NSL-KDD
+serror_rate,float64,numeric,99,0,0,False,NSL-KDD
+srv_serror_rate,float64,numeric,94,0,0,False,NSL-KDD
+rerror_rate,float64,numeric,98,0,0,False,NSL-KDD
+srv_rerror_rate,float64,numeric,95,0,0,False,NSL-KDD
+same_srv_rate,float64,numeric,101,0,0,False,NSL-KDD
+diff_srv_rate,float64,numeric,101,0,0,False,NSL-KDD
+srv_diff_srv_rate,float64,numeric,87,0,0,False,NSL-KDD
+dst_host_count,int64,numeric,256,0,0,False,NSL-KDD
+dst_host_srv_count,int64,numeric,256,0,0,False,NSL-KDD
+dst_host_same_srv_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_diff_srv_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_same_src_port_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_srv_diff_host_rate,float64,numeric,75,0,0,False,NSL-KDD
+dst_host_serror_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_srv_serror_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_rerror_rate,float64,numeric,101,0,0,False,NSL-KDD
+dst_host_srv_rerror_rate,float64,numeric,101,0,0,False,NSL-KDD
+difficulty,float64,numeric,22,22544,0,False,NSL-KDD
+Flow ID,str,numeric,1085071,288602,0,False,CICIDS2017
+Source IP,str,numeric,17005,288602,0,False,CICIDS2017
+Source Port,float64,numeric,64640,288602,0,False,CICIDS2017
+Destination IP,str,numeric,19112,288602,0,False,CICIDS2017
+Destination Port,float64,numeric,53805,288602,0,False,CICIDS2017
+Protocol,float64,categorical,3,288602,0,False,CICIDS2017
+Timestamp,str,numeric,27965,288602,0,False,CICIDS2017
+Flow Duration,float64,numeric,1050899,288602,0,False,CICIDS2017
+Total Fwd Packets,float64,numeric,1432,288602,0,False,CICIDS2017
+Total Backward Packets,float64,numeric,1747,288602,0,False,CICIDS2017
+Total Length of Fwd Packets,float64,numeric,17928,288602,0,False,CICIDS2017
+Total Length of Bwd Packets,float64,numeric,64698,288602,0,False,CICIDS2017
+Fwd Packet Length Max,float64,numeric,5279,288602,0,False,CICIDS2017
+Fwd Packet Length Min,float64,numeric,384,288602,0,False,CICIDS2017
+Fwd Packet Length Mean,float64,numeric,110947,288602,0,False,CICIDS2017
+Fwd Packet Length Std,float64,numeric,254503,288602,0,False,CICIDS2017
+Bwd Packet Length Max,float64,numeric,4838,288602,0,False,CICIDS2017
+Bwd Packet Length Min,float64,numeric,583,288602,0,False,CICIDS2017
+Bwd Packet Length Mean,float64,numeric,155550,288602,0,False,CICIDS2017
+Bwd Packet Length Std,float64,numeric,249279,288602,0,False,CICIDS2017
+Flow Bytes/s,float64,numeric,1595510,289960,1509,False,CICIDS2017
+Flow Packets/s,float64,numeric,1242581,288602,2867,False,CICIDS2017
+Flow IAT Mean,float64,numeric,1170776,288602,0,False,CICIDS2017
+Flow IAT Std,float64,numeric,1057132,288602,0,False,CICIDS2017
+Flow IAT Max,float64,numeric,580289,288602,0,False,CICIDS2017
+Flow IAT Min,float64,numeric,136316,288602,0,False,CICIDS2017
+Fwd IAT Total,float64,numeric,493098,288602,0,False,CICIDS2017
+Fwd IAT Mean,float64,numeric,739183,288602,0,False,CICIDS2017
+Fwd IAT Std,float64,numeric,700387,288602,0,False,CICIDS2017
+Fwd IAT Max,float64,numeric,437316,288602,0,False,CICIDS2017
+Fwd IAT Min,float64,numeric,110631,288602,0,False,CICIDS2017
+Bwd IAT Total,float64,numeric,414928,288602,0,False,CICIDS2017
+Bwd IAT Mean,float64,numeric,672219,288602,0,False,CICIDS2017
+Bwd IAT Std,float64,numeric,709055,288602,0,False,CICIDS2017
+Bwd IAT Max,float64,numeric,368285,288602,0,False,CICIDS2017
+Bwd IAT Min,float64,numeric,66074,288602,0,False,CICIDS2017
+Fwd PSH Flags,float64,numeric,2,288602,0,False,CICIDS2017
+Bwd PSH Flags,float64,numeric,1,288602,0,True,CICIDS2017
+Fwd URG Flags,float64,numeric,2,288602,0,False,CICIDS2017
+Bwd URG Flags,float64,numeric,1,288602,0,True,CICIDS2017
+Fwd Header Length,float64,numeric,3771,288602,0,False,CICIDS2017
+Bwd Header Length,float64,numeric,3945,288602,0,False,CICIDS2017
+Fwd Packets/s,float64,numeric,1222911,288602,0,False,CICIDS2017
+Bwd Packets/s,float64,numeric,1110086,288602,0,False,CICIDS2017
+Min Packet Length,float64,numeric,215,288602,0,False,CICIDS2017
+Max Packet Length,float64,numeric,5708,288602,0,False,CICIDS2017
+Packet Length Mean,float64,numeric,228671,288602,0,False,CICIDS2017
+Packet Length Std,float64,numeric,413576,288602,0,False,CICIDS2017
+Packet Length Variance,float64,numeric,409007,288602,0,False,CICIDS2017
+FIN Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+SYN Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+RST Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+PSH Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+ACK Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+URG Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+CWE Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+ECE Flag Count,float64,numeric,2,288602,0,False,CICIDS2017
+Down/Up Ratio,float64,numeric,31,288602,0,False,CICIDS2017
+Average Packet Size,float64,numeric,212207,288602,0,False,CICIDS2017
+Avg Fwd Segment Size,float64,numeric,99719,288602,0,False,CICIDS2017
+Avg Bwd Segment Size,float64,numeric,147611,288602,0,False,CICIDS2017
+Fwd Header Length.1,float64,numeric,3771,288602,0,False,CICIDS2017
+Fwd Avg Bytes/Bulk,float64,numeric,1,288602,0,True,CICIDS2017
+Fwd Avg Packets/Bulk,float64,numeric,1,288602,0,True,CICIDS2017
+Fwd Avg Bulk Rate,float64,numeric,1,288602,0,True,CICIDS2017
+Bwd Avg Bytes/Bulk,float64,numeric,1,288602,0,True,CICIDS2017
+Bwd Avg Packets/Bulk,float64,numeric,1,288602,0,True,CICIDS2017
+Bwd Avg Bulk Rate,float64,numeric,1,288602,0,True,CICIDS2017
+Subflow Fwd Packets,float64,numeric,1432,288602,0,False,CICIDS2017
+Subflow Fwd Bytes,float64,numeric,17928,288602,0,False,CICIDS2017
+Subflow Bwd Packets,float64,numeric,1747,288602,0,False,CICIDS2017
+Subflow Bwd Bytes,float64,numeric,64738,288602,0,False,CICIDS2017
+Init_Win_bytes_forward,float64,numeric,12151,288602,0,False,CICIDS2017
+Init_Win_bytes_backward,float64,numeric,13112,288602,0,False,CICIDS2017
+act_data_pkt_fwd,float64,numeric,1093,288602,0,False,CICIDS2017
+min_seg_size_forward,float64,numeric,28,288602,0,False,CICIDS2017
+Active Mean,float64,numeric,326674,288602,0,False,CICIDS2017
+Active Std,float64,numeric,202829,288602,0,False,CICIDS2017
+Active Max,float64,numeric,299565,288602,0,False,CICIDS2017
+Active Min,float64,numeric,175670,288602,0,False,CICIDS2017
+Idle Mean,float64,numeric,222150,288602,0,False,CICIDS2017
+Idle Std,float64,numeric,197617,288602,0,False,CICIDS2017
+Idle Max,float64,numeric,149737,288602,0,False,CICIDS2017
+Idle Min,float64,numeric,223888,288602,0,False,CICIDS2017
+Flow ID,str,numeric,234971,0,0,False,InSDN
+Src IP,str,numeric,122868,0,0,False,InSDN
+Src Port,int64,numeric,28273,0,0,False,InSDN
+Dst IP,str,numeric,1081,0,0,False,InSDN
+Dst Port,int64,numeric,29695,0,0,False,InSDN
+Protocol,int64,categorical,3,0,0,False,InSDN
+Timestamp,str,numeric,1392,0,0,False,InSDN
+Flow Duration,int64,numeric,85380,0,0,False,InSDN
+Tot Fwd Pkts,int64,numeric,569,0,0,False,InSDN
+Tot Bwd Pkts,int64,numeric,699,0,0,False,InSDN
+TotLen Fwd Pkts,float64,numeric,5602,0,0,False,InSDN
+TotLen Bwd Pkts,float64,numeric,7585,0,0,False,InSDN
+Fwd Pkt Len Max,int64,numeric,2132,0,0,False,InSDN
+Fwd Pkt Len Min,int64,numeric,76,0,0,False,InSDN
+Fwd Pkt Len Mean,float64,numeric,9764,0,0,False,InSDN
+Fwd Pkt Len Std,float64,numeric,11910,0,0,False,InSDN
+Bwd Pkt Len Max,int64,numeric,2988,0,0,False,InSDN
+Bwd Pkt Len Min,int64,numeric,64,0,0,False,InSDN
+Bwd Pkt Len Mean,float64,numeric,10981,0,0,False,InSDN
+Bwd Pkt Len Std,float64,numeric,13413,0,0,False,InSDN
+Flow Byts/s,float64,numeric,117671,0,0,False,InSDN
+Flow Pkts/s,float64,numeric,104345,0,0,False,InSDN
+Flow IAT Mean,float64,numeric,104337,0,0,False,InSDN
+Flow IAT Std,float64,numeric,110622,0,0,False,InSDN
+Flow IAT Max,float64,numeric,48508,0,0,False,InSDN
+Flow IAT Min,float64,numeric,18156,0,0,False,InSDN
+Fwd IAT Tot,float64,numeric,39965,0,0,False,InSDN
+Fwd IAT Mean,float64,numeric,52722,0,0,False,InSDN
+Fwd IAT Std,float64,numeric,50781,0,0,False,InSDN
+Fwd IAT Max,float64,numeric,39042,0,0,False,InSDN
+Fwd IAT Min,float64,numeric,16164,0,0,False,InSDN
+Bwd IAT Tot,float64,numeric,48842,0,0,False,InSDN
+Bwd IAT Mean,float64,numeric,70944,0,0,False,InSDN
+Bwd IAT Std,float64,numeric,79540,0,0,False,InSDN
+Bwd IAT Max,float64,numeric,44259,0,0,False,InSDN
+Bwd IAT Min,float64,numeric,16693,0,0,False,InSDN
+Fwd PSH Flags,int64,numeric,1,0,0,True,InSDN
+Bwd PSH Flags,int64,numeric,2,0,0,False,InSDN
+Fwd URG Flags,int64,numeric,1,0,0,True,InSDN
+Bwd URG Flags,int64,numeric,2,0,0,False,InSDN
+Fwd Header Len,int64,numeric,665,0,0,False,InSDN
+Bwd Header Len,int64,numeric,1057,0,0,False,InSDN
+Fwd Pkts/s,float64,numeric,88894,0,0,False,InSDN
+Bwd Pkts/s,float64,numeric,101218,0,0,False,InSDN
+Pkt Len Min,int64,numeric,51,0,0,False,InSDN
+Pkt Len Max,int64,numeric,3279,0,0,False,InSDN
+Pkt Len Mean,float64,numeric,14814,0,0,False,InSDN
+Pkt Len Std,float64,numeric,21440,0,0,False,InSDN
+Pkt Len Var,float64,numeric,20897,0,0,False,InSDN
+FIN Flag Cnt,int64,numeric,2,0,0,False,InSDN
+SYN Flag Cnt,int64,numeric,2,0,0,False,InSDN
+RST Flag Cnt,int64,numeric,2,0,0,False,InSDN
+PSH Flag Cnt,int64,numeric,2,0,0,False,InSDN
+ACK Flag Cnt,int64,numeric,2,0,0,False,InSDN
+URG Flag Cnt,int64,numeric,2,0,0,False,InSDN
+CWE Flag Count,int64,numeric,1,0,0,True,InSDN
+ECE Flag Cnt,int64,numeric,1,0,0,True,InSDN
+Down/Up Ratio,int64,numeric,10,0,0,False,InSDN
+Pkt Size Avg,float64,numeric,14575,0,0,False,InSDN
+Fwd Seg Size Avg,float64,numeric,9764,0,0,False,InSDN
+Bwd Seg Size Avg,float64,numeric,10981,0,0,False,InSDN
+Fwd Byts/b Avg,int64,numeric,1,0,0,True,InSDN
+Fwd Pkts/b Avg,int64,numeric,1,0,0,True,InSDN
+Fwd Blk Rate Avg,int64,numeric,1,0,0,True,InSDN
+Bwd Byts/b Avg,int64,numeric,1,0,0,True,InSDN
+Bwd Pkts/b Avg,int64,numeric,1,0,0,True,InSDN
+Bwd Blk Rate Avg,int64,numeric,1,0,0,True,InSDN
+Subflow Fwd Pkts,int64,numeric,569,0,0,False,InSDN
+Subflow Fwd Byts,int64,numeric,5602,0,0,False,InSDN
+Subflow Bwd Pkts,int64,numeric,699,0,0,False,InSDN
+Subflow Bwd Byts,int64,numeric,7589,0,0,False,InSDN
+Init Fwd Win Byts,int64,numeric,1,0,0,True,InSDN
+Init Bwd Win Byts,int64,numeric,227,0,0,False,InSDN
+Fwd Act Data Pkts,int64,numeric,289,0,0,False,InSDN
+Fwd Seg Size Min,int64,numeric,1,0,0,True,InSDN
+Active Mean,float64,numeric,19103,0,0,False,InSDN
+Active Std,float64,numeric,8560,0,0,False,InSDN
+Active Max,float64,numeric,18380,0,0,False,InSDN
+Active Min,float64,numeric,16183,0,0,False,InSDN
+Idle Mean,float64,numeric,5780,0,0,False,InSDN
+Idle Std,float64,numeric,8045,0,0,False,InSDN
+Idle Max,float64,numeric,4179,0,0,False,InSDN
+Idle Min,float64,numeric,7903,0,0,False,InSDN

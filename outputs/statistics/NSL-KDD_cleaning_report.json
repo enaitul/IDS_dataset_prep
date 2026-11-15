@@ -1,0 +1,96 @@
+{
+  "dataset": "NSL-KDD",
+  "before": {
+    "rows": 148517,
+    "columns": 43,
+    "class_counts": {
+      "normal": 77054,
+      "neptune": 41214,
+      "attack": 12833,
+      "satan": 3633,
+      "ipsweep": 3599,
+      "portsweep": 2931,
+      "smurf": 2646,
+      "nmap": 1493,
+      "back": 956,
+      "teardrop": 892,
+      "warezclient": 890,
+      "pod": 201,
+      "guess_passwd": 53,
+      "buffer_overflow": 30,
+      "warezmaster": 20,
+      "land": 18,
+      "imap": 11,
+      "rootkit": 10,
+      "loadmodule": 9,
+      "ftp_write": 8,
+      "multihop": 7,
+      "phf": 4,
+      "perl": 3,
+      "spy": 2
+    },
+    "rows_without_label": 0
+  },
+  "after": {
+    "rows": 148427,
+    "columns": 40,
+    "class_counts": {
+      "normal": 76967,
+      "neptune": 41214,
+      "attack": 12830,
+      "satan": 3633,
+      "ipsweep": 3599,
+      "portsweep": 2931,
+      "smurf": 2646,
+      "nmap": 1493,
+      "back": 956,
+      "teardrop": 892,
+      "warezclient": 890,
+      "pod": 201,
+      "guess_passwd": 53,
+      "buffer_overflow": 30,
+      "warezmaster": 20,
+      "land": 18,
+      "imap": 11,
+      "rootkit": 10,
+      "loadmodule": 9,
+      "ftp_write": 8,
+      "multihop": 7,
+      "phf": 4,
+      "perl": 3,
+      "spy": 2
+    }
+  },
+  "rows_removed": {
+    "no_label": 0,
+    "all_features_nan": 0,
+    "exact_duplicates": 90
+  },
+  "exact_duplicates_removed_by_class": {
+    "normal": 87,
+    "attack": 3
+  },
+  "non_numeric_cells_coerced_to_nan": 0,
+  "infinite_cells_set_to_nan": 0,
+  "missing_cells_remaining": 0,
+  "conflicting_feature_duplicate_groups_kept": 632,
+  "columns_removed": [
+    {
+      "column": "difficulty",
+      "reason": "NSL-KDD difficulty score produced by the dataset authors' classifier ensemble; not observable at deployment. Preserved as metadata (__difficulty)",
+      "stage": "identifier"
+    },
+    {
+      "column": "num_outbound_cmds",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    }
+  ],
+  "policy": {
+    "drop_exact_duplicates": true,
+    "drop_all_nan_rows": true,
+    "drop_constant_columns": true,
+    "drop_duplicate_columns": true
+  },
+  "fraction_rows_removed": 0.0006059912333268302
+}

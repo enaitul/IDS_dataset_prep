@@ -1,0 +1,16 @@
+,class_before,class_after,removed
+BENIGN,2273097,2096714,176383
+Bot,1966,1953,13
+DDoS,128027,128016,11
+DoS GoldenEye,10293,10286,7
+DoS Hulk,231073,172849,58224
+DoS Slowhttptest,5499,5228,271
+DoS slowloris,5796,5385,411
+FTP-Patator,7938,5933,2005
+Heartbleed,11,11,0
+Infiltration,36,36,0
+PortScan,158930,90819,68111
+SSH-Patator,5897,3219,2678
+Web Attack - Brute Force,1507,1470,37
+Web Attack - Sql Injection,21,21,0
+Web Attack - XSS,652,652,0

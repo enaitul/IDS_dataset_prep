@@ -1,0 +1,62 @@
+feature,rfe_rank,selected
+Init Bwd Win Byts,1,True
+Dst Port,2,True
+Fwd Pkts/s,3,True
+Bwd Header Len,4,True
+Pkt Len Mean,5,True
+Flow Duration,6,True
+Fwd Header Len,7,True
+Flow IAT Min,8,True
+Pkt Size Avg,9,False
+Fwd IAT Max,10,False
+Tot Fwd Pkts,11,False
+Flow IAT Max,12,False
+Bwd Pkt Len Max,13,False
+Fwd IAT Tot,14,False
+Flow IAT Std,15,False
+Pkt Len Max,16,False
+Fwd Pkt Len Std,17,False
+Bwd Pkt Len Std,18,False
+Protocol,19,False
+Pkt Len Std,20,False
+Tot Bwd Pkts,21,False
+Bwd Pkts/s,22,False
+Flow Pkts/s,23,False
+Bwd IAT Min,24,False
+Subflow Bwd Byts,25,False
+Bwd IAT Max,26,False
+Bwd Pkt Len Mean,27,False
+Fwd Pkt Len Max,28,False
+Down/Up Ratio,29,False
+Fwd IAT Mean,30,False
+Flow IAT Mean,31,False
+TotLen Bwd Pkts,32,False
+Bwd IAT Std,33,False
+Fwd IAT Min,34,False
+Pkt Len Var,35,False
+ACK Flag Cnt,36,False
+Bwd IAT Tot,37,False
+Fwd Pkt Len Mean,38,False
+Flow Byts/s,39,False
+TotLen Fwd Pkts,40,False
+Bwd Pkt Len Min,41,False
+Bwd IAT Mean,42,False
+Bwd Seg Size Avg,43,False
+Fwd IAT Std,44,False
+Pkt Len Min,45,False
+Subflow Fwd Byts,46,False
+SYN Flag Cnt,47,False
+FIN Flag Cnt,48,False
+Fwd Act Data Pkts,49,False
+Fwd Pkt Len Min,50,False
+Idle Max,51,False
+Active Mean,52,False
+Active Max,53,False
+Bwd PSH Flags,54,False
+Idle Min,55,False
+Active Min,56,False
+Active Std,57,False
+Idle Mean,58,False
+Idle Std,59,False
+RST Flag Cnt,60,False
+Bwd URG Flags,61,False

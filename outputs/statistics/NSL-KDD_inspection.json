@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "dataset": "NSL-KDD",
+    "files": "KDDTrain+.txt; KDDTest+.txt",
+    "formats": "txt",
+    "n_files": 2,
+    "n_records": 148517,
+    "n_features_original": 42,
+    "label_column": "label",
+    "n_classes": 24,
+    "rows_without_label": 0,
+    "missing_cells": 22544,
+    "rows_with_any_missing": 22544,
+    "inf_cells": 0,
+    "columns_with_inf": 0,
+    "exact_duplicate_rows": 3,
+    "duplicate_rows_pct": 0.0020199707777560816,
+    "feature_duplicate_conflicting_groups": 62,
+    "n_constant_features": 1,
+    "majority_class": "normal",
+    "minority_class": "spy",
+    "majority_count": 77054,
+    "minority_count": 2,
+    "imbalance_ratio_max_over_min": 38527.0
+  },
+  "missing_per_column": {
+    "difficulty": 22544
+  },
+  "inf_per_column": {},
+  "coerced_non_numeric": {},
+  "constant_features": [
+    "num_outbound_cmds"
+  ],
+  "identifier_candidates": [
+    {
+      "column": "dst_host_same_src_port_rate",
+      "reasons": "name suggests identifier/time/port"
+    }
+  ],
+  "file_infos": [
+    {
+      "file": "KDDTrain+.txt",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\NSL-KDD\\KDDTrain+.txt",
+      "format": "txt",
+      "size_bytes": 14738831,
+      "rows": 125973,
+      "md5": "120b13c9092ab72d4902f2079143cc2c",
+      "validation": {
+        "rows_match_published": true,
+        "md5_match_reference": true,
+        "published_rows": 125973,
+        "reference_md5": "120b13c9092ab72d4902f2079143cc2c"
+      }
+    },
+    {
+      "file": "KDDTest+.txt",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\NSL-KDD\\KDDTest+.txt",
+      "format": "txt",
+      "size_bytes": 2573994,
+      "rows": 22544,
+      "md5": "1e53a506c102628114ca1b1fa509b6a8",
+      "validation": {
+        "rows_match_published": true,
+        "md5_match_reference": true,
+        "published_rows": 22544,
+        "reference_md5": "1e53a506c102628114ca1b1fa509b6a8"
+      }
+    }
+  ]
+}

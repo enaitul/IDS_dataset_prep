@@ -1,0 +1,248 @@
+{
+  "summary": {
+    "dataset": "CICIDS2017",
+    "files": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv; Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv; Friday-WorkingHours-Morning.pcap_ISCX.csv; Monday-WorkingHours.pcap_ISCX.csv; Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv; Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv; Tuesday-WorkingHours.pcap_ISCX.csv; Wednesday-workingHours.pcap_ISCX.csv",
+    "formats": "csv",
+    "n_files": 8,
+    "n_records": 3119345,
+    "n_features_original": 84,
+    "label_column": "Label",
+    "n_classes": 15,
+    "rows_without_label": 288602,
+    "missing_cells": 24243926,
+    "rows_with_any_missing": 289960,
+    "inf_cells": 4376,
+    "columns_with_inf": 2,
+    "exact_duplicate_rows": 288804,
+    "duplicate_rows_pct": 9.258482149297368,
+    "feature_duplicate_conflicting_groups": 0,
+    "n_constant_features": 8,
+    "majority_class": "BENIGN",
+    "minority_class": "Heartbleed",
+    "majority_count": 2273097,
+    "minority_count": 11,
+    "imbalance_ratio_max_over_min": 206645.18181818182
+  },
+  "missing_per_column": {
+    "Flow ID": 288602,
+    "Source IP": 288602,
+    "Source Port": 288602,
+    "Destination IP": 288602,
+    "Destination Port": 288602,
+    "Protocol": 288602,
+    "Timestamp": 288602,
+    "Flow Duration": 288602,
+    "Total Fwd Packets": 288602,
+    "Total Backward Packets": 288602,
+    "Total Length of Fwd Packets": 288602,
+    "Total Length of Bwd Packets": 288602,
+    "Fwd Packet Length Max": 288602,
+    "Fwd Packet Length Min": 288602,
+    "Fwd Packet Length Mean": 288602,
+    "Fwd Packet Length Std": 288602,
+    "Bwd Packet Length Max": 288602,
+    "Bwd Packet Length Min": 288602,
+    "Bwd Packet Length Mean": 288602,
+    "Bwd Packet Length Std": 288602,
+    "Flow Bytes/s": 289960,
+    "Flow Packets/s": 288602,
+    "Flow IAT Mean": 288602,
+    "Flow IAT Std": 288602,
+    "Flow IAT Max": 288602,
+    "Flow IAT Min": 288602,
+    "Fwd IAT Total": 288602,
+    "Fwd IAT Mean": 288602,
+    "Fwd IAT Std": 288602,
+    "Fwd IAT Max": 288602,
+    "Fwd IAT Min": 288602,
+    "Bwd IAT Total": 288602,
+    "Bwd IAT Mean": 288602,
+    "Bwd IAT Std": 288602,
+    "Bwd IAT Max": 288602,
+    "Bwd IAT Min": 288602,
+    "Fwd PSH Flags": 288602,
+    "Bwd PSH Flags": 288602,
+    "Fwd URG Flags": 288602,
+    "Bwd URG Flags": 288602,
+    "Fwd Header Length": 288602,
+    "Bwd Header Length": 288602,
+    "Fwd Packets/s": 288602,
+    "Bwd Packets/s": 288602,
+    "Min Packet Length": 288602,
+    "Max Packet Length": 288602,
+    "Packet Length Mean": 288602,
+    "Packet Length Std": 288602,
+    "Packet Length Variance": 288602,
+    "FIN Flag Count": 288602,
+    "SYN Flag Count": 288602,
+    "RST Flag Count": 288602,
+    "PSH Flag Count": 288602,
+    "ACK Flag Count": 288602,
+    "URG Flag Count": 288602,
+    "CWE Flag Count": 288602,
+    "ECE Flag Count": 288602,
+    "Down/Up Ratio": 288602,
+    "Average Packet Size": 288602,
+    "Avg Fwd Segment Size": 288602,
+    "Avg Bwd Segment Size": 288602,
+    "Fwd Header Length.1": 288602,
+    "Fwd Avg Bytes/Bulk": 288602,
+    "Fwd Avg Packets/Bulk": 288602,
+    "Fwd Avg Bulk Rate": 288602,
+    "Bwd Avg Bytes/Bulk": 288602,
+    "Bwd Avg Packets/Bulk": 288602,
+    "Bwd Avg Bulk Rate": 288602,
+    "Subflow Fwd Packets": 288602,
+    "Subflow Fwd Bytes": 288602,
+    "Subflow Bwd Packets": 288602,
+    "Subflow Bwd Bytes": 288602,
+    "Init_Win_bytes_forward": 288602,
+    "Init_Win_bytes_backward": 288602,
+    "act_data_pkt_fwd": 288602,
+    "min_seg_size_forward": 288602,
+    "Active Mean": 288602,
+    "Active Std": 288602,
+    "Active Max": 288602,
+    "Active Min": 288602,
+    "Idle Mean": 288602,
+    "Idle Std": 288602,
+    "Idle Max": 288602,
+    "Idle Min": 288602
+  },
+  "inf_per_column": {
+    "Flow Bytes/s": 1509,
+    "Flow Packets/s": 2867
+  },
+  "coerced_non_numeric": {
+    "Flow ID": 2830743,
+    "Source IP": 2830743,
+    "Destination IP": 2830743,
+    "Timestamp": 2830743
+  },
+  "constant_features": [
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk",
+    "Fwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd Avg Bulk Rate"
+  ],
+  "identifier_candidates": [
+    {
+      "column": "Flow ID",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Source IP",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Source Port",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Destination IP",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Destination Port",
+      "reasons": "name suggests identifier/time/port"
+    },
+    {
+      "column": "Timestamp",
+      "reasons": "name suggests identifier/time/port"
+    }
+  ],
+  "file_infos": [
+    {
+      "file": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 96101069,
+      "rows": 225745,
+      "md5": "b0916c20f14561d66e84afe33b4ece23",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 101874777,
+      "rows": 286467,
+      "md5": "f7c179333baebe2bdeb772c334cb6dd7",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Friday-WorkingHours-Morning.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 75386737,
+      "rows": 191033,
+      "md5": "c5bf0fdb609d9d8db3044f00e8d4d008",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Monday-WorkingHours.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Monday-WorkingHours.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 268649908,
+      "rows": 529918,
+      "md5": "906f82030bfb3a9c45ef7a2f3b1cd365",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 108723183,
+      "rows": 288602,
+      "md5": "040030306fbd691336726a0d769654e4",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 92030223,
+      "rows": 458968,
+      "md5": "2c3e5dc6d3395266543d40ba0d15f29e",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Tuesday-WorkingHours.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Tuesday-WorkingHours.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 174696560,
+      "rows": 445909,
+      "md5": "149fca427503e8f04fe22fc75bb33234",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    },
+    {
+      "file": "Wednesday-workingHours.pcap_ISCX.csv",
+      "path": "C:\\Users\\eprvl\\Downloads\\SDN_IDS_Member1\\SDN_IDS\\data\\raw\\CICIDS2017\\_extracted_GeneratedLabelledFlows\\TrafficLabelling\\Wednesday-workingHours.pcap_ISCX.csv",
+      "format": "csv",
+      "size_bytes": 285642925,
+      "rows": 692703,
+      "md5": "0974e0e4eccebeb0a7cbcad9ae5d6550",
+      "validation": {
+        "file_count_matches_expected": true
+      }
+    }
+  ]
+}

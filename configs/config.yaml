@@ -1,0 +1,85 @@
+# Member 1 pipeline configuration. Every tunable lives here; nothing is hard-coded in src/.
+seed: 42
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  splits: data/splits
+  metadata: data/metadata
+  stats: outputs/statistics
+  graphs: outputs/graphs
+  selected: outputs/selected_features
+  reports: outputs/reports
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+  near_duplicate_decimals: 3      # rounding used for the cross-split near-duplicate audit
+
+cleaning:
+  drop_exact_duplicates: true     # on all feature columns + original label, keep='first' (file order)
+  drop_all_nan_rows: true         # rows where EVERY feature is NaN (empty CSV rows)
+  drop_constant_columns: true     # constant over the whole raw dataset => constant in train too (no leakage)
+  drop_duplicate_columns: true    # columns whose values are identical to an earlier column
+
+# Identifier / non-traffic columns. Each one is removed ONLY if listed here, with the stated reason.
+identifier_columns:
+  "Flow ID":          "Flow identifier built from endpoints + ports; unique per flow, no behavioural content"
+  "Source IP":        "Host address; memorises the simulation topology (attacker IP) rather than behaviour"
+  "Src IP":           "Host address; memorises the simulation topology (attacker IP) rather than behaviour"
+  "Destination IP":   "Host address; memorises the simulation topology (victim IP) rather than behaviour"
+  "Dst IP":           "Host address; memorises the simulation topology (victim IP) rather than behaviour"
+  "Source Port":      "Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling"
+  "Src Port":         "Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling"
+  "Timestamp":        "Capture time; not a traffic feature. Preserved as metadata (__timestamp) for leakage audits only"
+  "difficulty":       "NSL-KDD difficulty score produced by the dataset authors' classifier ensemble; not observable at deployment. Preserved as metadata (__difficulty)"
+
+datasets:
+  NSL-KDD:
+    raw_dir: data/raw/NSL-KDD
+    label_column: label
+    categorical_columns: [protocol_type, service, flag]
+    multiclass_source: official_train_only
+    expected_files:
+      "KDDTrain+.txt": {rows: 125973, md5: "120b13c9092ab72d4902f2079143cc2c"}
+      "KDDTest+.txt":  {rows: 22544,  md5: "1e53a506c102628114ca1b1fa509b6a8"}
+  CICIDS2017:
+    raw_dir: data/raw/CICIDS2017
+    label_column: Label
+    categorical_columns: [Protocol]
+    timestamp_dayfirst: false      # CICIDS2017 timestamps are month/day/year (only used for the leakage audit)
+    expected_file_count: 8
+  InSDN:
+    raw_dir: data/raw/InSDN
+    label_column: Label
+    categorical_columns: [Protocol]
+    timestamp_dayfirst: true       # assumption for InSDN (day/month/year); verify on the real file - an unparsable value only yields NaT
+    expected_file_count: 3
+
+feature_selection:
+  stratified_subsample_rows: {info_gain: 150000, rfe: 40000}
+  min_rows_per_class_in_subsample: 500
+  info_gain:
+    cumulative_mass: 0.95          # predefined rule: smallest top-k holding >=95% of total IG (uses NO validation labels)
+    n_neighbors: 3
+  rfe:
+    estimator: random_forest
+    n_estimators: 60
+    max_depth: 12
+    step: 1
+    k_grid: [5, 8, 10, 12, 15, 20, 25, 30, 40, 50, 60]
+    tolerance: 0.002               # choose the smallest k within `tolerance` of the best validation macro-F1
+    proxy_n_estimators: 60         # RF used only to score candidate k on validation data
+
+smote_nc:
+  k_neighbors: 5
+  target_per_class: 50000          # minority classes are raised toward this count (never above the majority count)
+  max_ratio: 20                    # ...but never more than 20x their real size (avoid hallucinating tiny classes)
+  min_samples: 6                   # classes with fewer real samples are NOT oversampled (reported; use class weights)
+  scale_for_neighbours: true       # MinMax-scale numeric columns for the neighbour search only
+
+export:
+  feature_configs: [all_features, info_gain, rfe, info_gain_rfe]
+  representations: [tree, mlp]     # tree: imputed+ordinal, unscaled. mlp: MinMax(numeric) + one-hot(categorical)
+  smote_nc: true

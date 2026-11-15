@@ -1,0 +1,146 @@
+{
+  "all_features": {
+    "method": "SMOTENC",
+    "categorical_columns": [
+      "Protocol"
+    ],
+    "random_state": 42,
+    "before": {
+      "BFA": 967,
+      "BOTNET": 114,
+      "DDoS": 1064,
+      "DoS": 35308,
+      "Normal": 46875,
+      "Probe": 68611,
+      "U2R": 11,
+      "Web-Attack": 129
+    },
+    "skipped_classes_too_small": {},
+    "params": {
+      "k_neighbors_requested": 5,
+      "target_per_class": 50000,
+      "max_ratio": 20,
+      "min_samples": 6,
+      "scale_for_neighbours": true
+    },
+    "k_neighbors_used": 5,
+    "after": {
+      "BFA": 19340,
+      "BOTNET": 2280,
+      "DDoS": 21280,
+      "DoS": 50000,
+      "Normal": 50000,
+      "Probe": 68611,
+      "U2R": 220,
+      "Web-Attack": 2580
+    },
+    "n_synthetic": 61232
+  },
+  "info_gain": {
+    "method": "SMOTENC",
+    "categorical_columns": [
+      "Protocol"
+    ],
+    "random_state": 42,
+    "before": {
+      "BFA": 967,
+      "BOTNET": 114,
+      "DDoS": 1064,
+      "DoS": 35308,
+      "Normal": 46875,
+      "Probe": 68611,
+      "U2R": 11,
+      "Web-Attack": 129
+    },
+    "skipped_classes_too_small": {},
+    "params": {
+      "k_neighbors_requested": 5,
+      "target_per_class": 50000,
+      "max_ratio": 20,
+      "min_samples": 6,
+      "scale_for_neighbours": true
+    },
+    "k_neighbors_used": 5,
+    "after": {
+      "BFA": 19340,
+      "BOTNET": 2280,
+      "DDoS": 21280,
+      "DoS": 50000,
+      "Normal": 50000,
+      "Probe": 68611,
+      "U2R": 220,
+      "Web-Attack": 2580
+    },
+    "n_synthetic": 61232
+  },
+  "rfe": {
+    "method": "SMOTE (no categorical column present)",
+    "categorical_columns": [],
+    "random_state": 42,
+    "before": {
+      "BFA": 967,
+      "BOTNET": 114,
+      "DDoS": 1064,
+      "DoS": 35308,
+      "Normal": 46875,
+      "Probe": 68611,
+      "U2R": 11,
+      "Web-Attack": 129
+    },
+    "skipped_classes_too_small": {},
+    "params": {
+      "k_neighbors_requested": 5,
+      "target_per_class": 50000,
+      "max_ratio": 20,
+      "min_samples": 6,
+      "scale_for_neighbours": true
+    },
+    "k_neighbors_used": 5,
+    "after": {
+      "BFA": 19340,
+      "BOTNET": 2280,
+      "DDoS": 21280,
+      "DoS": 50000,
+      "Normal": 50000,
+      "Probe": 68611,
+      "U2R": 220,
+      "Web-Attack": 2580
+    },
+    "n_synthetic": 61232
+  },
+  "info_gain_rfe": {
+    "method": "SMOTE (no categorical column present)",
+    "categorical_columns": [],
+    "random_state": 42,
+    "before": {
+      "BFA": 967,
+      "BOTNET": 114,
+      "DDoS": 1064,
+      "DoS": 35308,
+      "Normal": 46875,
+      "Probe": 68611,
+      "U2R": 11,
+      "Web-Attack": 129
+    },
+    "skipped_classes_too_small": {},
+    "params": {
+      "k_neighbors_requested": 5,
+      "target_per_class": 50000,
+      "max_ratio": 20,
+      "min_samples": 6,
+      "scale_for_neighbours": true
+    },
+    "k_neighbors_used": 5,
+    "after": {
+      "BFA": 19340,
+      "BOTNET": 2280,
+      "DDoS": 21280,
+      "DoS": 50000,
+      "Normal": 50000,
+      "Probe": 68611,
+      "U2R": 220,
+      "Web-Attack": 2580
+    },
+    "n_synthetic": 61232
+  }
+}

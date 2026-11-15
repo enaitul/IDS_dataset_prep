@@ -1,0 +1,3 @@
+column,reason,stage,dataset
+difficulty,NSL-KDD difficulty score produced by the dataset authors' classifier ensemble; not observable at deployment. Preserved as metadata (__difficulty),identifier,NSL-KDD
+num_outbound_cmds,constant (<=1 distinct non-null value) over the whole dataset,constant,NSL-KDD

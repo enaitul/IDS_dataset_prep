@@ -1,0 +1,28 @@
+dataset,original_label,harmonized_label,confidence,reason,observed_in_data
+NSL-KDD,attack,UNMAPPED,unknown,Label not present in the documented mapping table; needs manual review,True
+NSL-KDD,buffer_overflow,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,ftp_write,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,guess_passwd,BruteForce,medium,Online password guessing against a service; comparable to CICIDS Patator / InSDN BFA but via different tooling (R2L category in KDD),True
+NSL-KDD,imap,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,loadmodule,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,multihop,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,perl,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,phf,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,rootkit,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,spy,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,warezclient,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,warezmaster,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,xlock,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,xsnoop,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,snmpguess,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,snmpgetattack,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,httptunnel,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,sendmail,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,named,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,worm,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,sqlattack,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+NSL-KDD,xterm,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+NSL-KDD,ps,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+CICIDS2017,Heartbleed,UNMAPPED,none,OpenSSL memory-disclosure exploit; not a flood and not equivalent to any common category (only 11 flows in the public CSVs per literature; verify),True
+CICIDS2017,Web Attack - Brute Force,WebAttack,medium,HTTP login brute force; could alternatively be BruteForce - kept with other web attacks to respect the dataset's own grouping,True
+InSDN,U2R,UNMAPPED,none,"Privilege escalation via exploit tooling; NSL-KDD also has U2R but with different attack instances - equivalence not established, so not merged",True

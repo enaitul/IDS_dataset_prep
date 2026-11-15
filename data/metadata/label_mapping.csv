@@ -1,0 +1,65 @@
+dataset,original_label,harmonized_label,confidence,reason,observed_in_data
+NSL-KDD,attack,UNMAPPED,unknown,"Coarse binary attack label from KDDTest+; no attack subtype is provided, so it is not mapped to a multiclass category",True
+NSL-KDD,back,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,buffer_overflow,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,ftp_write,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,guess_passwd,BruteForce,medium,Online password guessing against a service; comparable to CICIDS Patator / InSDN BFA but via different tooling (R2L category in KDD),True
+NSL-KDD,imap,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,ipsweep,Probe,high,KDD taxonomy Probe: scanning / surveillance,True
+NSL-KDD,land,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,loadmodule,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,multihop,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,neptune,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,nmap,Probe,high,KDD taxonomy Probe: scanning / surveillance,True
+NSL-KDD,normal,Benign,high,Normal traffic,True
+NSL-KDD,perl,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,phf,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,pod,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,portsweep,Probe,high,KDD taxonomy Probe: scanning / surveillance,True
+NSL-KDD,rootkit,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",True
+NSL-KDD,satan,Probe,high,KDD taxonomy Probe: scanning / surveillance,True
+NSL-KDD,smurf,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,spy,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,teardrop,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),True
+NSL-KDD,warezclient,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,warezmaster,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,True
+NSL-KDD,apache2,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),False
+NSL-KDD,udpstorm,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),False
+NSL-KDD,processtable,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),False
+NSL-KDD,mailbomb,DoS,high,KDD taxonomy DoS: resource-exhaustion from a single logical source (no DDoS class exists in NSL-KDD),False
+NSL-KDD,mscan,Probe,high,KDD taxonomy Probe: scanning / surveillance,False
+NSL-KDD,saint,Probe,high,KDD taxonomy Probe: scanning / surveillance,False
+NSL-KDD,xlock,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,xsnoop,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,snmpguess,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,snmpgetattack,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,httptunnel,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,sendmail,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,named,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,worm,UNMAPPED,none,R2L (remote-to-local) host-exploitation / misc. attack; no equivalent category in CICIDS2017 or InSDN,False
+NSL-KDD,sqlattack,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+NSL-KDD,xterm,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+NSL-KDD,ps,UNMAPPED,none,"U2R (user-to-root) privilege escalation; host-level, not equivalent to any CICIDS2017 category (InSDN U2R is a different attack set)",False
+CICIDS2017,BENIGN,Benign,high,Normal traffic,True
+CICIDS2017,Bot,Botnet,high,Ares botnet C&C traffic,True
+CICIDS2017,DDoS,DDoS,high,Distributed flood (LOIC) from multiple sources,True
+CICIDS2017,DoS GoldenEye,DoS,high,Application-layer HTTP DoS from one source,True
+CICIDS2017,DoS Hulk,DoS,high,Application-layer HTTP flood from one source,True
+CICIDS2017,DoS Slowhttptest,DoS,high,Slow-rate HTTP DoS from one source,True
+CICIDS2017,DoS slowloris,DoS,high,Slow-connection DoS from one source,True
+CICIDS2017,FTP-Patator,BruteForce,high,FTP credential brute force,True
+CICIDS2017,Heartbleed,UNMAPPED,none,OpenSSL memory-disclosure exploit; not a flood and not equivalent to any common category (only 11 flows in the public CSVs per literature; verify),True
+CICIDS2017,Infiltration,Infiltration,high,Inside-network infiltration (Metasploit / Cool disk),True
+CICIDS2017,PortScan,Probe,high,Port scanning,True
+CICIDS2017,SSH-Patator,BruteForce,high,SSH credential brute force,True
+CICIDS2017,Web Attack - Brute Force,WebAttack,medium,HTTP login brute force; could alternatively be BruteForce - kept with other web attacks to respect the dataset's own grouping,True
+CICIDS2017,Web Attack - Sql Injection,WebAttack,high,SQL injection,True
+CICIDS2017,Web Attack - XSS,WebAttack,high,Cross-site scripting,True
+InSDN,BFA,BruteForce,high,Brute-force attack on services (FTP/SSH/HTTP login),True
+InSDN,BOTNET,Botnet,high,Botnet traffic,True
+InSDN,DDoS,DDoS,high,Distributed DoS,True
+InSDN,DoS,DoS,high,Single-source DoS,True
+InSDN,Normal,Benign,high,Normal traffic,True
+InSDN,Probe,Probe,high,Reconnaissance / scanning,True
+InSDN,U2R,UNMAPPED,none,"Privilege escalation via exploit tooling; NSL-KDD also has U2R but with different attack instances - equivalence not established, so not merged",True
+InSDN,Web-Attack,WebAttack,high,Web application attacks (SQLi/XSS/...),True

@@ -1,0 +1,167 @@
+{
+  "dataset": "CICIDS2017",
+  "before": {
+    "rows": 3119345,
+    "columns": 85,
+    "class_counts": {
+      "BENIGN": 2273097,
+      "DoS Hulk": 231073,
+      "PortScan": 158930,
+      "DDoS": 128027,
+      "DoS GoldenEye": 10293,
+      "FTP-Patator": 7938,
+      "SSH-Patator": 5897,
+      "DoS slowloris": 5796,
+      "DoS Slowhttptest": 5499,
+      "Bot": 1966,
+      "Web Attack - Brute Force": 1507,
+      "Web Attack - XSS": 652,
+      "Infiltration": 36,
+      "Web Attack - Sql Injection": 21,
+      "Heartbleed": 11
+    },
+    "rows_without_label": 288602
+  },
+  "after": {
+    "rows": 2522592,
+    "columns": 66,
+    "class_counts": {
+      "BENIGN": 2096714,
+      "DoS Hulk": 172849,
+      "DDoS": 128016,
+      "PortScan": 90819,
+      "DoS GoldenEye": 10286,
+      "FTP-Patator": 5933,
+      "DoS slowloris": 5385,
+      "DoS Slowhttptest": 5228,
+      "SSH-Patator": 3219,
+      "Bot": 1953,
+      "Web Attack - Brute Force": 1470,
+      "Web Attack - XSS": 652,
+      "Infiltration": 36,
+      "Web Attack - Sql Injection": 21,
+      "Heartbleed": 11
+    }
+  },
+  "rows_removed": {
+    "no_label": 288602,
+    "all_features_nan": 0,
+    "exact_duplicates": 308151
+  },
+  "exact_duplicates_removed_by_class": {
+    "BENIGN": 176383,
+    "PortScan": 68111,
+    "DoS Hulk": 58224,
+    "SSH-Patator": 2678,
+    "FTP-Patator": 2005,
+    "DoS slowloris": 411,
+    "DoS Slowhttptest": 271,
+    "Web Attack - Brute Force": 37,
+    "Bot": 13,
+    "DDoS": 11,
+    "DoS GoldenEye": 7
+  },
+  "non_numeric_cells_coerced_to_nan": 0,
+  "infinite_cells_set_to_nan": 4376,
+  "missing_cells_remaining": 3128,
+  "conflicting_feature_duplicate_groups_kept": 697,
+  "columns_removed": [
+    {
+      "column": "Flow ID",
+      "reason": "Flow identifier built from endpoints + ports; unique per flow, no behavioural content",
+      "stage": "identifier"
+    },
+    {
+      "column": "Source IP",
+      "reason": "Host address; memorises the simulation topology (attacker IP) rather than behaviour",
+      "stage": "identifier"
+    },
+    {
+      "column": "Destination IP",
+      "reason": "Host address; memorises the simulation topology (victim IP) rather than behaviour",
+      "stage": "identifier"
+    },
+    {
+      "column": "Source Port",
+      "reason": "Ephemeral client port; near-random per flow, known shortcut feature for fixed attacker tooling",
+      "stage": "identifier"
+    },
+    {
+      "column": "Timestamp",
+      "reason": "Capture time; not a traffic feature. Preserved as metadata (__timestamp) for leakage audits only",
+      "stage": "identifier"
+    },
+    {
+      "column": "Bwd PSH Flags",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd URG Flags",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Avg Bytes/Bulk",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Avg Packets/Bulk",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Fwd Avg Bulk Rate",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Avg Bytes/Bulk",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Avg Packets/Bulk",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "Bwd Avg Bulk Rate",
+      "reason": "constant (<=1 distinct non-null value) over the whole dataset",
+      "stage": "constant"
+    },
+    {
+      "column": "SYN Flag Count",
+      "reason": "values identical to column 'Fwd PSH Flags'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "CWE Flag Count",
+      "reason": "values identical to column 'Fwd URG Flags'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Fwd Header Length.1",
+      "reason": "values identical to column 'Fwd Header Length'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Subflow Fwd Packets",
+      "reason": "values identical to column 'Total Fwd Packets'",
+      "stage": "duplicate_column"
+    },
+    {
+      "column": "Subflow Bwd Packets",
+      "reason": "values identical to column 'Total Backward Packets'",
+      "stage": "duplicate_column"
+    }
+  ],
+  "policy": {
+    "drop_exact_duplicates": true,
+    "drop_all_nan_rows": true,
+    "drop_constant_columns": true,
+    "drop_duplicate_columns": true
+  },
+  "fraction_rows_removed": 0.1913071494175861
+}
